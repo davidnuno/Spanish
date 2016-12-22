@@ -6,8 +6,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import static com.example.android.Spanish.R.id.words;
-
 public class NumbersActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +15,8 @@ public class NumbersActivity extends AppCompatActivity {
 
         // Create a list of words
         ArrayList<Word> words = new ArrayList<>();
+
+        //Add the new words with translations and images, if any.
         words.add(new Word("one", "uno", R.drawable.number_one));
         words.add(new Word("two", "dos", R.drawable.number_two));
         words.add(new Word("three", "tres", R.drawable.number_three));
@@ -26,11 +26,11 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("seven", "siete", R.drawable.number_seven));
         words.add(new Word("eight", "ocho", R.drawable.number_eight));
         words.add(new Word("nine", "nueve", R.drawable.number_nine));
-        words.add(new Word("ten", "dies", R.drawable.number_ten));
+        words.add(new Word("ten", "diez", R.drawable.number_ten));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_numbers);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

@@ -14,7 +14,9 @@ public class PhrasesActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // Create a list of words
-        ArrayList<Word> words = new ArrayList<Word>();
+        ArrayList<Word> words = new ArrayList<>();
+
+        //Add the new words with translations and images, if any.
         words.add(new Word("Where are you going?", "¿A donde vas?"));
         words.add(new Word("What is your name?", "¿Como te llamas?"));
         words.add(new Word("My name is...", "Me llamo..."));
@@ -28,7 +30,7 @@ public class PhrasesActivity extends AppCompatActivity {
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
