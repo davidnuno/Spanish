@@ -33,9 +33,10 @@ public class Word {
      *                           (such as English)
      * @param spanishTranslation is the word in the Spanish language
      */
-    public Word(String defaultTranslation, String spanishTranslation) {
+    public Word(String defaultTranslation, String spanishTranslation, int audioResourceID) {
         mDefaultTranslation = defaultTranslation;
         mSpanishTranslation = spanishTranslation;
+        mAudioResourceID = audioResourceID;
     }
 
     /**
@@ -47,11 +48,11 @@ public class Word {
      * @param imageResourceId is the drawable resource ID for the image associated with the word
      *
      */
-    public Word(String defaultTranslation, String spanishTranslation, int imageResourceId, int audioResrouceID) {
+    public Word(String defaultTranslation, String spanishTranslation, int imageResourceId, int audioResourceID) {
         mDefaultTranslation = defaultTranslation;
         mSpanishTranslation = spanishTranslation;
         mImageResourceId = imageResourceId;
-        mAudioResourceID = audioResrouceID;
+        mAudioResourceID = audioResourceID;
     }
 
     /**

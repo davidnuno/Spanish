@@ -14,4 +14,9 @@
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Family Members</string>
+
+    <string-array name="numbers">
+        <item>one</item>
+        <item>two</item>
+    </string-array>
 </resources>

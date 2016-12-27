@@ -1,24 +1,27 @@
 package com.example.android.Spanish;
 
+import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
 
     private MediaPlayer mMediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
         // Create a list of words
-        ArrayList<Word> words = new ArrayList<>();
+        final ArrayList<Word> words = new ArrayList<>();
 
         //Add the new words with translations and images, if any.
         words.add(new Word("one", "uno", R.drawable.number_one, R.raw.one));
@@ -47,9 +50,11 @@ public class NumbersActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                mMediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.one);
+            public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
 
+                Word word = words.get(pos);
+
+                mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceID());
                 mMediaPlayer.start();
             }
         });
