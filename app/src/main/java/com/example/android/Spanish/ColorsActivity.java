@@ -17,14 +17,14 @@ public class ColorsActivity extends AppCompatActivity {
         ArrayList<Word> words = new ArrayList<>();
 
         //Add the new words with translations and images, if any.
-        words.add(new Word("red", "rojo", R.drawable.color_red));
-        words.add(new Word("dusty yellow", "amarillo polvoriento", R.drawable.color_dusty_yellow));
-        words.add(new Word("mustard yellow", "amarillo mostaza", R.drawable.color_mustard_yellow));
-        words.add(new Word("green", "verde", R.drawable.color_green));
-        words.add(new Word("brown", "cafe", R.drawable.color_brown));
-        words.add(new Word("gray", "gris", R.drawable.color_gray));
-        words.add(new Word("black", "negro", R.drawable.color_black));
-        words.add(new Word("white", "blanco", R.drawable.color_white));
+        words.add(new Word("red", "rojo", R.drawable.color_red, R.raw.one));
+        words.add(new Word("dusty yellow", "amarillo polvoriento", R.drawable.color_dusty_yellow, R.raw.one));
+        words.add(new Word("mustard yellow", "amarillo mostaza", R.drawable.color_mustard_yellow, R.raw.one));
+        words.add(new Word("green", "verde", R.drawable.color_green, R.raw.one));
+        words.add(new Word("brown", "cafe", R.drawable.color_brown, R.raw.one));
+        words.add(new Word("gray", "gris", R.drawable.color_gray, R.raw.one));
+        words.add(new Word("black", "negro", R.drawable.color_black, R.raw.one));
+        words.add(new Word("white", "blanco", R.drawable.color_white, R.raw.one));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

@@ -1,12 +1,13 @@
 package com.example.android.Spanish;
 
 import android.content.Context;
-import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -62,6 +63,7 @@ public class WordAdapter extends ArrayAdapter<Word>  {
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
         // Check if an image is provided for this word or not
+
         if (currentWord.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
             imageView.setImageResource(currentWord.getImageResourceId());
