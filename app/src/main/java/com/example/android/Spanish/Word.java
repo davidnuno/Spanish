@@ -31,7 +31,9 @@ public class Word {
      *
      * @param defaultTranslation is the word in a language that the user is already familiar with
      *                           (such as English)
-     * @param spanishTranslation is the word in the Spanish language
+     * @param spanishTranslation is the word in the Spanish language.
+     *
+     * @param audioResourceID is the resource ID for the audio file associated with the word.
      */
     public Word(String defaultTranslation, String spanishTranslation, int audioResourceID) {
         mDefaultTranslation = defaultTranslation;
@@ -45,7 +47,10 @@ public class Word {
      * @param defaultTranslation is the word in a language that the user is already familiar with
      *                           (such as English)
      * @param spanishTranslation is the word in the Spanish language
+     *
      * @param imageResourceId is the drawable resource ID for the image associated with the word
+     *
+     * @param audioResourceID is the resource ID for the audio file associated with the word.
      *
      */
     public Word(String defaultTranslation, String spanishTranslation, int imageResourceId, int audioResourceID) {
@@ -92,5 +97,18 @@ public class Word {
     public boolean hasImage() {
 
         return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
+
+    /**
+     * Returns the string representation of the {@link Word} object.
+     */
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mAudioResourceID=" + mAudioResourceID +
+                ", mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mSpanishTranslation='" + mSpanishTranslation + '\'' +
+                ", mImageResourceId=" + mImageResourceId +
+                '}';
     }
 }
