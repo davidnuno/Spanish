@@ -91,16 +91,16 @@ public class PhrasesActivity extends AppCompatActivity {
         final ArrayList<Word> words = new ArrayList<>();
 
         //Add the new words with translations and images, if any.
-        words.add(new Word("Where are you going?", "¿A donde vas?", R.raw.number_one));
-        words.add(new Word("What is your name?", "¿Como te llamas?", R.raw.number_one));
-        words.add(new Word("My name is...", "Me llamo...", R.raw.number_one));
-        words.add(new Word("How are you feeling?", "¿Cuantos años tienes?", R.raw.number_one));
-        words.add(new Word("I’m feeling good.", "Me siento bien.", R.raw.number_one));
-        words.add(new Word("Are you coming?", "¿Vas a venir?", R.raw.number_one));
-        words.add(new Word("Yes, I’m coming.", "Si, ahi voy.", R.raw.number_one));
-        words.add(new Word("I’m coming.", "Ya voy", R.raw.number_one));
-        words.add(new Word("Let’s go.", "Vamos.", R.raw.number_one));
-        words.add(new Word("Come here.", "Ven aca.", R.raw.number_one));
+        words.add(new Word("Where are you going?", "¿A donde vas?", R.raw.phrase_where_are_you_going));
+        words.add(new Word("What is your name?", "¿Como te llamas?", R.raw.phrase_what_is_your_name));
+        words.add(new Word("My name is...", "Me llamo...", R.raw.phrase_my_name_is));
+        words.add(new Word("How are you feeling?", "¿Como te sientes?", R.raw.phrase_how_are_you_feeling));
+        words.add(new Word("I’m feeling good.", "Me siento bien.", R.raw.phrase_i_feel_good));
+        words.add(new Word("Are you coming?", "¿Vas a venir?", R.raw.phrase_are_you_coming));
+        words.add(new Word("Yes, I’m coming.", "Si, ahi voy para allá.", R.raw.phrase_yes_im_coming));
+        words.add(new Word("I’m coming.", "Ya voy", R.raw.phrase_im_coming));
+        words.add(new Word("Let’s go.", "Vamos.", R.raw.phrase_lets_go));
+        words.add(new Word("Come here.", "Ven aca.", R.raw.phrase_come_here));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

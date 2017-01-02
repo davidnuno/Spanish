@@ -93,16 +93,16 @@ public class FamilyActivity extends AppCompatActivity {
         final ArrayList<Word> words = new ArrayList<>();
 
         //Add the new words with translations and images, if any.
-        words.add(new Word("father", "papá", R.drawable.family_father, R.raw.number_one));
-        words.add(new Word("mother", "mamá", R.drawable.family_mother, R.raw.number_one));
-        words.add(new Word("son", "hijo", R.drawable.family_son, R.raw.number_one));
-        words.add(new Word("daughter", "hija", R.drawable.family_daughter, R.raw.number_one));
-        words.add(new Word("older brother", "hermano", R.drawable.family_older_brother, R.raw.number_one));
-        words.add(new Word("younger brother", "hermanito", R.drawable.family_younger_brother, R.raw.number_one));
-        words.add(new Word("older sister", "hermana", R.drawable.family_older_sister, R.raw.number_one));
-        words.add(new Word("younger sister", "hermanita", R.drawable.family_younger_sister, R.raw.number_one));
-        words.add(new Word("grandmother ", "abuela", R.drawable.family_grandmother, R.raw.number_one));
-        words.add(new Word("grandfather", "abuelo", R.drawable.family_grandfather, R.raw.number_one));
+        words.add(new Word("father", "padre", R.drawable.family_father, R.raw.family_father));
+        words.add(new Word("mother", "madre", R.drawable.family_mother, R.raw.family_mother));
+        words.add(new Word("son", "hijo", R.drawable.family_son, R.raw.family_son));
+        words.add(new Word("daughter", "hija", R.drawable.family_daughter, R.raw.family_daughter));
+        words.add(new Word("older brother", "hermano", R.drawable.family_older_brother, R.raw.family_brother));
+        words.add(new Word("younger brother", "hermanito", R.drawable.family_younger_brother, R.raw.family_little_brother));
+        words.add(new Word("older sister", "hermana", R.drawable.family_older_sister, R.raw.family_sister));
+        words.add(new Word("younger sister", "hermanita", R.drawable.family_younger_sister, R.raw.family_little_sister));
+        words.add(new Word("grandmother ", "abuela", R.drawable.family_grandmother, R.raw.family_grandmother));
+        words.add(new Word("grandfather", "abuelo", R.drawable.family_grandfather, R.raw.family_grandfather));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
